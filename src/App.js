@@ -1,9 +1,8 @@
 import './App.scss';
-import { SearchBar } from './components/SearchBar';
-
+import { Categories } from './components/Categories';
 function App() {
   return (
-    <SearchBar/>
+    <Categories/>
   );
 }
 

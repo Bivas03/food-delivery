@@ -1,0 +1,38 @@
+.bottom-tab-wrapper{
+    background-color: #fafaf8;
+    & .bottom-tab-list{
+        display: flex;
+        flex-direction: row;
+        padding: 0px;
+        justify-content: space-between;
+        @media screen and (min-width: 768px) {
+            justify-content: space-evenly;
+        }
+        &::-webkit-scrollbar{
+            display: none;
+        }
+        & .bottom-tab-item{
+            list-style-type: none;
+            max-width: 30px;
+            padding: 8px;
+            &>a{
+                display: block;
+                font-size: 10px;
+                text-align: center;
+                text-decoration: none;
+                color: #544f40;
+                font-weight: 500;
+                &>img{
+                    max-width: 100%;
+                    filter: invert(25%) sepia(36%) saturate(276%) hue-rotate(7deg) brightness(98%) contrast(81%);
+                }
+                &.active,&:hover,&:focus{
+                    color: black;
+                    &>img{
+                        filter: invert(1%) sepia(10%) saturate(1071%) hue-rotate(164deg) brightness(88%) contrast(101%);
+                    }
+                }
+            }
+        }
+    }
+}
