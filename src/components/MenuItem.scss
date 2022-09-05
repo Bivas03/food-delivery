@@ -1,0 +1,40 @@
+.main-container{
+    display: flex;
+    justify-content: space-between;
+    background-color: #fafaf8;
+    & .checkbox{
+        width: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        & #checkbox{
+            width: 20px;
+            height: 20px;
+            &:checked{
+                accent-color: #3cb371;
+            }
+        }
+    }
+    & .details{
+        width: 50%;
+        & #title{
+            font-size: 16px;
+            margin: 5px 0px;
+            font-weight: bold;
+        }
+        & #description{
+            font-size: 12px;
+            margin: 5px 0px;
+        }
+        & #price{
+            font-size: 12px;
+            margin: 5px 0px;
+        }
+    }
+    & .dish-image{
+        width: 30%;
+        &>img{
+            max-width: 100%;
+        }
+    }
+}

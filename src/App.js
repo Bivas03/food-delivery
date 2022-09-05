@@ -1,8 +1,8 @@
 import './App.scss';
-import { Categories } from './components/Categories';
+import { MenuItem } from './components/MenuItem';
 function App() {
   return (
-    <Categories/>
+    <MenuItem/>
   );
 }
 
